@@ -1,20 +1,39 @@
+h1 {
+  color: #993520;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3em;
+}
+
+img {
+  width: 65%;
+  max-height: auto;
+}
+
 .container {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  width: 100%;
 }
-
 
 .c1 {
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+  }
   .container {
-    width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .c1 {
+    margin-top: 10%;
   }
 }
